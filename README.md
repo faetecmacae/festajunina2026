@@ -8,4 +8,4 @@ Pedro Henrique  <br>
 Gabriel Melo  <br>
 Ruan Conceição  <br>
 Matheus Frutuoso <br>
-e João Vitor.
+João Vitor.
