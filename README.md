@@ -5,4 +5,4 @@ Marcelo André de Moraes,
 Sttefany Teixeira,
 Pedro Henrique,
 Gabriel Melo,
-Ruan e Matheus Frutuoso.
+Ruan Conceição, Matheus Frutuoso e João Vitor.
