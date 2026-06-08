@@ -156,6 +156,27 @@
         margin-top: 20px;
         color: #3b2415;
     }
+
+    /* Garantir que todas as caixas do participe tenham a mesma altura */
+.w3-quarter {
+    display: flex;
+}
+
+.w3-quarter > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.w3-quarter > div p:last-child {
+    margin-top: auto;
+}
+
+/* Botão ficará no final da caixa */
+.w3-quarter button {
+    margin-top: auto;
+}
 </style>
 </head>
 <body>
