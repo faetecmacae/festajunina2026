@@ -425,7 +425,7 @@ Quem desapega, ajuda a fazer a festa mais bonita!
 </footer>
 
 <script>
-  // ========== SLIDESHOW PRINCIPAL (banner) ==========
+  // SLIDESHOW PRINCIPAL (banner) 
 var myIndex = 0;
 carousel();
 
@@ -438,7 +438,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  setTimeout(carousel, 8000);    
 }
 
 //imagens da galeria (substituir os templates dps)
@@ -518,7 +518,7 @@ function reiniciarIntervalo() {
     if (intervaloGaleria) {
         clearInterval(intervaloGaleria);
     }
-    intervaloGaleria = setInterval(proximoSlide, 4000);
+    intervaloGaleria = setInterval(proximoSlide, 8000);
 }
 
 // Criar os indicadores (pontinhos)
@@ -601,7 +601,7 @@ function inicializarGaleria() {
     criarIndicadores();
     adicionarBotoesNavegacao();
     atualizarSlide(0);
-    intervaloGaleria = setInterval(proximoSlide, 4000);
+    intervaloGaleria = setInterval(proximoSlide, 8000);
     
     // Pausar slideshow quando o mouse estiver sobre a imagem
     const container = document.querySelector('.slideshow-container');
@@ -609,7 +609,7 @@ function inicializarGaleria() {
         if (intervaloGaleria) clearInterval(intervaloGaleria);
     });
     container.addEventListener('mouseleave', () => {
-        intervaloGaleria = setInterval(proximoSlide, 4000);
+        intervaloGaleria = setInterval(proximoSlide, 8000);
     });
 }
 
