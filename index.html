@@ -163,7 +163,7 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
-    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="myFunction()" title="Toggle Navigation Menu">
+    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" id="menuButton">
       <i class="fa fa-bars"></i>
     </button>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">INICÍO</a>
@@ -174,12 +174,13 @@
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INICÍO</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAMAÇÃO</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATO</a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOTOS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">INICÍO</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">PROGRAMAÇÃO</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">COMO PARTICIPAR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">CONTATO</a>
+  <a href="#galeria" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">FOTOS</a>
 </div>
 
 <!-- Page content -->
@@ -698,12 +699,34 @@ function myFunction() {
   }
 }
 
-// Fechar menu ao clicar em um link (melhoria de usabilidade)
-document.querySelectorAll('#navDemo a').forEach(function(link) {
-  link.addEventListener('click', function() {
-    var x = document.getElementById("navDemo");
-    x.className = x.className.replace(" w3-show", "");
-  });
+// Menu mobile
+var menuButton = document.getElementById('menuButton');
+var navDemo = document.getElementById('navDemo');
+
+function toggleMenu() {
+  if (navDemo.classList.contains('w3-show')) {
+    navDemo.classList.remove('w3-show');
+  } else {
+    navDemo.classList.add('w3-show');
+  }
+}
+
+function closeMenu() {
+  navDemo.classList.remove('w3-show');
+}
+
+if (menuButton) {
+  menuButton.onclick = toggleMenu;
+}
+
+// Fechar menu ao clicar fora (opcional - melhoria)
+document.addEventListener('click', function(event) {
+  var isClickInsideNav = navDemo.contains(event.target);
+  var isClickOnButton = menuButton.contains(event.target);
+  
+  if (!isClickInsideNav && !isClickOnButton && navDemo.classList.contains('w3-show')) {
+    navDemo.classList.remove('w3-show');
+  }
 });
 </script>
 
