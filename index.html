@@ -418,7 +418,7 @@
 
     function reiniciarIntervalo() {
         if (intervaloGaleria) clearInterval(intervaloGaleria);
-        intervaloGaleria = setInterval(proximoSlide, 8000);
+        intervaloGaleria = setInterval(proximoSlide, 100000);
     }
 
     function criarIndicadores() {
@@ -466,11 +466,11 @@
         criarIndicadores();
         adicionarBotoesNavegacao();
         atualizarSlide(0);
-        intervaloGaleria = setInterval(proximoSlide, 8000);
+        intervaloGaleria = setInterval(proximoSlide, 100000);
         
         const container = document.querySelector('.slideshow-container');
         container.addEventListener('mouseenter', () => { if (intervaloGaleria) clearInterval(intervaloGaleria); });
-        container.addEventListener('mouseleave', () => { intervaloGaleria = setInterval(proximoSlide, 8000); });
+        container.addEventListener('mouseleave', () => { intervaloGaleria = setInterval(proximoSlide, 100000); });
     }
 
     document.addEventListener('DOMContentLoaded', inicializarGaleria);
