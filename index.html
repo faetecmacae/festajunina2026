@@ -1,827 +1,546 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>Festa Junina 2026</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-<style>
-/*{font-family: "Lato", sans-serif}*/
-.mySlides {display: none}
- * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        /*background: #f5ecd7;*/
-        background: white;
-        font-family: 'Special Elite', cursive;
-        padding: 40px;
-        color: #2c1b0f;
-    }
-
-    .cardapio-container {
-        max-width: 900px;
-        margin: auto;
-        background: #f8f0dd;
-        border: 8px double #3b2415;
-        padding: 25px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 25px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        border-bottom: 3px dashed #3b2415;
-        padding-bottom: 15px;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    thead {
-        background: #3b2415;
-        color: #f8f0dd;
-    }
-
-    th, td {
-        padding: 15px;
-        border: 2px solid #3b2415;
-        text-align: left;
-    }
-
-    th {
-        font-size: 1.1rem;
-        letter-spacing: 1px;
-    }
-
-    tbody tr:nth-child(odd) {
-        background: rgba(59, 36, 21, 0.08);
-    }
-
-    tbody tr:hover {
-        background: rgba(59, 36, 21, 0.15);
-        transition: 0.3s;
-    }
-
-    .preco {
-        text-align: right;
-        font-weight: bold;
-    }
-
-    .decoracao {
-        text-align: center;
-        font-size: 1.2rem;
-        margin: 15px 0;
-        color: #3b2415;
-    }
-
-    /* Estilo para a galeria de imagens */
-    .galeria-container {
-        max-width: 1000px;
-        margin: auto;
-        background: #f8f0dd;
-        border: 8px double #3b2415;
-        padding: 25px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    }
-
-    .galeria-titulo {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 25px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        color: #3b2415;
-    }
-
-    .slideshow-container {
-        position: relative;
-        max-width: 100%;
-        margin: auto;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    .slide-imagem {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .legenda {
-        text-align: center;
-        background: rgba(59, 36, 21, 0.8);
-        color: #f8f0dd;
-        padding: 12px;
-        font-size: 1.1rem;
-        letter-spacing: 1px;
-    }
-
-    .indicadores {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .ponto {
-        height: 15px;
-        width: 15px;
-        margin: 0 5px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-    }
-
-    .ponto.ativo {
-        background-color: #3b2415;
-    }
-
-    .decoracao-galeria {
-        text-align: center;
-        font-size: 1.2rem;
-        margin-top: 20px;
-        color: #3b2415;
-    }
-
-    /* Garantir que todas as caixas do participe tenham a mesma altura */
-.w3-quarter {
-    display: flex;
-}
-
-.w3-quarter > div {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-.w3-quarter > div p:last-child {
-    margin-top: auto;
-}
-
-/* Botão ficará no final da caixa */
-.w3-quarter button {
-    margin-top: auto;
-}
-</style>
+    <title>Festa Junina FAETEC 2026</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background: white;
+        }
+        .mySlides {
+            display: none
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cardapio-container, .galeria-container, .contact-container {
+            max-width: 900px;
+            margin: auto;
+            background: #f8f0dd;
+            border: 8px double #3b2415;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            font-family: 'Special Elite', cursive;
+            color: #2c1b0f;
+            border-radius: 4px;
+        }
+        .cardapio-container h2, .galeria-titulo {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 3px dashed #3b2415;
+            padding-bottom: 15px;
+            color: #3b2415;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 15px;
+            border: 2px solid #3b2415;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+        th {
+            background: #3b2415;
+            color: #f8f0dd;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        tbody tr:nth-child(odd) {
+            background: rgba(59, 36, 21, 0.08);
+        }
+        tbody tr:hover {
+            background: rgba(59, 36, 21, 0.15);
+            transition: 0.3s;
+        }
+        .decoracao, .decoracao-galeria {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #3b2415;
+        }
+        /* Estilos da Galeria */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background: #3b2415;
+        }
+        .slide-imagem, .slide-video {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        .legenda {
+            text-align: center;
+            background: rgba(59, 36, 21, 0.8);
+            color: #f8f0dd;
+            padding: 12px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .indicadores {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .ponto {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .ponto.ativo {
+            background-color: #3b2415;
+        }
+        /* Garantir que todas as caixas do participe tenham a mesma altura */
+        .w3-quarter {
+            display: flex;
+        }
+        .w3-quarter > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+        .w3-quarter button {
+            margin-top: auto;
+        }
+        .section-title {
+            font-family: 'Special Elite', cursive;
+            color: #2c1b0f;
+        }
+        .w3-black .section-title {
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" id="menuButton">
-      <i class="fa fa-bars"></i>
-    </button>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">INICÍO</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMAÇÃO</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMO PARTICIPAR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATO</a>
-    <a href="#galeria" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTOS</a>
-  </div>
+    <div class="w3-bar w3-black w3-card">
+        <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" id="menuButton">
+            <i class="fa fa-bars"></i>
+        </button>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">INÍCIO</a>
+        <a href="#programacao" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMAÇÃO</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMO PARTICIPAR</a>
+        <a href="#galeria" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTOS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATO</a>
+    </div>
 </div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">INICÍO</a>
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">PROGRAMAÇÃO</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">COMO PARTICIPAR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">CONTATO</a>
-  <a href="#galeria" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">FOTOS</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">INÍCIO</a>
+    <a href="#programacao" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">PROGRAMAÇÃO</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">COMO PARTICIPAR</a>
+    <a href="#galeria" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">FOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="closeMenu()">CONTATO</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="banner.festajunina.jpeg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-       </div>
-  
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">Sejam Bem-Vindos(as) à Festa da Roça na FAETEC Macaé</h2>
-    <p class="w3-justify">É um momento único de integração que ocorrerá no dia 18/06/2026 às 18:00 horas, onde professores, funcionários(as) e estudantes trabalham lado a lado, provando que o aprendizado na FAETEC também envolve cooperação, criatividade e resgate cultural. O ponto alto da festa, sem dúvida, é a apresentação da tradicional quadrilha da roça e o Show de Talentos. Vista-se a caráter e não deixe de participar!!!</p>
-<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-      </div>
-      <div class=""> 
-        <center><p></p>
-        <img src="logo_faetec.png" alt="logo" style="width:60%;">
-      </center>
-      </div>
-      <div class="w3-third">
-      </div>
+    <!-- Automatic Slideshow Banner -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://img.freepik.com/fotos-gratis/danca-de-casal-de-festa-junina-com-cenografia-tipica_23-2151609219.jpg" style="width:100%" alt="Banner Festa Junina 1">
     </div>
-  </div>
-
- <!-- Programação -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-  
-    <div class="cardapio-container">
-
-    <h2>✦ ATRAÇÕES ✦</h2>
-
-    <div class="decoracao">
-        ❦ ❦ ❦
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://img.freepik.com/fotos-gratis/danca-de-casal-de-festa-junina-com-cenografia-tipica_23-2151609228.jpg" style="width:100%" alt="Banner Festa Junina 2">
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <tbody>
-            <tr>
-                <td>Show de Talentos</td>
-                            </tr>
-
-            <tr>
-                <td>Pescaria com Brindes</td>
-                
-            </tr>
-
-            <tr>
-             <td>Dança de Quadrilha</td>
-
-            </tr>
-
-            
-
-            
-        </tbody>
-    </table>
-
-    
-
-</div>
-
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    
-    <div class="cardapio-container">
-
-    <h2>✦ CARDÁPIO DA ROÇA ✦</h2>
-
-    <div class="decoracao">
-        ❦ ❦ ❦
-    </div>
-
-    <table>
-                <tbody>
-            <tr>
-                <td>Caldo Verde</td>
-                            </tr>
-
-            <tr>
-                <td>Cuscuz</td>
-                            </tr>
-
-            <tr>
-                <td>Canjica Doce</td>
-                
-            </tr>
-
-            <tr>
-                <td>Canjiquinha</td>
-                
-            </tr>
-
-            <tr>
-                <td>Bolos</td>
-                
-            </tr>
-
-            <tr> 
-              <td>Cachorro Quente</td>
-            
-            </tr>
-
-            <tr>
-              <td> Doces e Guloseimas</td>
-            </tr>
-
-            <tr>
-              <td>Refrigerantes</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="decoracao">
-        ❦ Feito com o sabor da tradição ❦
-    </div>
-
-</div>
-<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-      </div>
-      <div class=""> 
-        <center><p></p>
-        <img src="faetec_logo.jpg" alt="logo" style="width:200;">
-      </center>
-      </div>
-      <div class="w3-third">
-      </div>
-    </div>
-  </div>
-
-  <!-- COMO PARTICIPAR -->
-<div class="w3-black" id="tour">
-  <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
-    <h1 class="w3-wide w3-center" style="color: white;">PARTICIPE!</h1>
-    <p class="w3-opacity w3-center" style="color: #ddd;"><i>A inscrição é opcional.</i></p><br>
-
-    <!-- Container flexível para as 4 caixas -->
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      
-      <!-- Caixa 1 - Show de Talentos -->
-      <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
-        <p style="color: #2c1b0f;"><b>🎭 Show de Talentos</b></p>
-        <p style="color: #2c1b0f;">Todo talento é digno.<br>Nos mostre o seu!</p>
-        <button class="w3-button w3-black" style="margin-top: auto;" onclick="window.open('https://forms.gle/PSQ3JcmEmzFtHNLM9', '_blank')">Inscreva-se!</button>
-        <img src="qrcodetalentos.jpeg" alt="QR code" style="width: 100%; margin-top: 15px;">       
-      </div>
-
-      <!-- Caixa 2 - Pescaria -->
-      <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
-        <p style="color: #2c1b0f;"><b>🎣 Pescaria</b></p>
-        <p style="color: #2c1b0f;"><strong>Itens para doação:</strong></p>
-        <ul style="margin-left: 20px; color: #2c1b0f;">
-          <li style="color: #2c1b0f;">Brinquedos e jogos em bom estado</li>
-          <li style="color: #2c1b0f;">Livros e Gibis</li>
-          <li style="color: #2c1b0f;">Doces e guloseimas</li>
-          <li style="color: #2c1b0f;">Brindes e variedades</li>
-        </ul>
-        <p style="color: #2c1b0f;"><strong>📍 Onde entregar?</strong><br>
-        Caixa oficial da Pescaria<br>
-        Setor Pedagógico / Secretaria</p>
-        <p style="color: #2c1b0f;"><strong>⏰ Prazo: 11/06 (Quinta-feira)</strong></p>
-        <p style="color: #2c1b0f;"><em>💡 Quem desapega, ajuda a fazer a festa mais bonita!</em></p>
-      </div>
-
-      <!-- Caixa 3 - Doações de alimento -->
-      <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
-        <p style="color: #2c1b0f;"><b>🍲 Doações de alimento</b></p>
-        <p style="color: #2c1b0f;">Procure seu professor para se inscrever na doação de alimentos para a festa.</p>
-        <br>
-        <h3 style="color: #3b2415;">🍿 Vamos todos nos unir para um arraial de matar!</h3>
-        <br>
-        <p style="color: #2c1b0f;"><strong>🍢 Itens sugeridos:</strong><br>
-        Milho, amendoim, pipoca, doces típicos</p>
-      </div>
-
-      <!-- Caixa 4 - Confirme presença -->
-      <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
-        <p style="color: #2c1b0f;"><b>✅ Confirme sua presença!</b></p>
-        <p style="color: #2c1b0f;"><strong>⏰ Prazo: 12/06</strong></p>
-        <button class="w3-button w3-black" style="margin-top: auto;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfSs9NSM6f_eUq9xJDhnqSvKkiwRQNibhLQBWtOHkW0J5rYmg/viewform?usp=publish-editor', '_blank')">Confirmar Presença</button>
-        <br>
-        <p style="color: #2c1b0f; font-size: 12px; margin-top: 10px;">*Sua confirmação nos ajuda a organizar melhor a festa!</p>
-      </div>
-    </div>
-
-    <p class="w3-opacity w3-center" style="margin-top: 30px; color: #ddd;"><i>📌 Somente os alunos estão convidados para a festa, e apenas o show de talentos precisa de inscrição</i></p>
-  </div>
-</div>
-
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-
-<!-- Contato -->
-<div class="w3-container w3-content w3-padding-64" id="contact" style="max-width:800px; margin:auto;">
-    <h2 class="w3-wide w3-center" style="color: #2c1b0f; margin-bottom: 30px;">CONTATO</h2>
-    
-    <div style="background: #f8f0dd; padding: 30px; border: 2px solid #3b2415; border-radius: 10px;">
-        
-        <!-- Formulário que envia para o WhatsApp -->
-        <form id="whatsappForm" onsubmit="enviarWhatsApp(event)">
-            <div class="w3-margin-bottom">
-                <label style="color: #2c1b0f; display: block; margin-bottom: 5px;">Nome:</label>
-                <input class="w3-input w3-border" type="text" id="nome" placeholder="Seu nome completo" required style="border-color: #3b2415;">
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide section-title">Sejam Bem-Vindos(as) à Festa da Roça na FAETEC Macaé</h2>
+        <p class="w3-justify">É um momento único de integração que ocorrerá no dia 18/06/2026 às 18:00 horas, onde professores, funcionários(as) e estudantes trabalham lado a lado, provando que o aprendizado na FAETEC também envolve cooperação, criatividade e resgate cultural. O ponto alto da festa, sem dúvida, é a apresentação da tradicional quadrilha da roça e o Show de Talentos. Vista-se a caráter e não deixe de participar!!!</p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third"><br></div>
+            <div class="w3-third">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Logo_da_Faetec.jpg/220px-Logo_da_Faetec.jpg" alt="Logo FAETEC" style="width:60%; border-radius: 50%;">
             </div>
-
-            <div class="w3-margin-bottom">
-                <label style="color: #2c1b0f; display: block; margin-bottom: 5px;">Telefone:</label>
-                <input class="w3-input w3-border" type="tel" id="telefone" placeholder="(22) 99999-9999" required style="border-color: #3b2415;">
-            </div>
-
-            <div class="w3-margin-bottom">
-                <label style="color: #2c1b0f; display: block; margin-bottom: 5px;">E-mail:</label>
-                <input class="w3-input w3-border" type="email" id="email" placeholder="seuemail@exemplo.com" required style="border-color: #3b2415;">
-            </div>
-
-            <div class="w3-margin-bottom">
-                <label style="color: #2c1b0f; display: block; margin-bottom: 5px;">Mensagem:</label>
-                <textarea class="w3-input w3-border" id="mensagem" placeholder="Digite sua mensagem aqui..." required rows="5" style="border-color: #3b2415;"></textarea>
-            </div>
-
-            <button type="submit" class="w3-button w3-black" style="width: 100%; padding: 12px; font-size: 16px;">
-                <i class="fa fa-whatsapp"></i> ENVIAR MENSAGEM
-            </button>
-        </form>
-
-        <div id="statusMensagem" style="margin-top: 15px; text-align: center; display: none; padding: 10px; border-radius: 5px;"></div>
-    </div>
-</div>
-
-<script>
-function enviarWhatsApp(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-    
-    // Pegar os valores dos campos
-    var nome = document.getElementById('nome').value;
-    var telefone = document.getElementById('telefone').value;
-    var email = document.getElementById('email').value;
-    var mensagem = document.getElementById('mensagem').value;
-    
-    // Validar se os campos estão preenchidos
-    if (!nome || !telefone || !email || !mensagem) {
-        mostrarStatus('Por favor, preencha todos os campos!', 'erro');
-        return;
-    }
-    
-    // Número do WhatsApp (remova o +55 se já tiver, mantenha apenas os números)
-    var numeroWhatsApp = '5522998884900'; // Apenas números, sem + ou espaços
-    
-    // Montar a mensagem que será enviada
-    var textoWhatsApp = `*NOVO CONTATO DO SITE - FESTA JUNINA FAETEC*%0a%0a`;
-    textoWhatsApp += `*Nome:* ${nome}%0a`;
-    textoWhatsApp += `*Telefone:* ${telefone}%0a`;
-    textoWhatsApp += `*E-mail:* ${email}%0a`;
-    textoWhatsApp += `*Mensagem:* ${mensagem}%0a%0a`;
-    textoWhatsApp += `*Enviado em:* ${new Date().toLocaleString('pt-BR')}`;
-    
-    // Criar o link do WhatsApp
-    var urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoWhatsApp}`;
-    
-    // Abrir o WhatsApp em uma nova aba
-    window.open(urlWhatsApp, '_blank');
-    
-    // Mostrar mensagem de sucesso
-    mostrarStatus('✅ Mensagem preparada! O WhatsApp será aberto para você enviar.', 'sucesso');
-    
-    // Opcional: Limpar o formulário após 2 segundos
-    setTimeout(function() {
-        document.getElementById('whatsappForm').reset();
-    }, 2000);
-}
-
-function mostrarStatus(mensagem, tipo) {
-    var statusDiv = document.getElementById('statusMensagem');
-    statusDiv.style.display = 'block';
-    statusDiv.innerHTML = mensagem;
-    
-    if (tipo === 'sucesso') {
-        statusDiv.style.backgroundColor = '#d4edda';
-        statusDiv.style.color = '#155724';
-        statusDiv.style.border = '1px solid #c3e6cb';
-    } else {
-        statusDiv.style.backgroundColor = '#f8d7da';
-        statusDiv.style.color = '#721c24';
-        statusDiv.style.border = '1px solid #f5c6cb';
-    }
-    
-    // Esconder a mensagem após 5 segundos
-    setTimeout(function() {
-        statusDiv.style.display = 'none';
-    }, 5000);
-}
-</script>
-
-
-
-<div class="w3-row w3-padding-32">
-  <div class="w3-col m12 w3-large w3-margin-bottom w3-center">
-    <i class="fa fa-map-marker" style="width:30px"></i>
-    Av. Aloisio da Silva Gomes s/n, Granja dos Cavaleiros, Macaé - RJ
-    <br>
-
-    <i class="fa fa-whatsapp" style="width:30px"></i>
-     <a
-    class="btn-whatsapp"
-    href="https://wa.me/5522998884900?text=Olá,%20gostaria%20de%20mais%20informações."
-    target="_blank"
-  >+55 (22)99888-4900
-    Falar no WhatsApp clique aqui
-  </a>
-  
-    <br>
-
-    <i class="fa fa-envelope" style="width:30px"></i>
-    faetecmacae@gmail.com.br
-  </div>
-</div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Slide -->
-<!-- galeria de imagens -->
-<div class="w3-container w3-content w3-center w3-padding-64" id="galeria">
-    <div class="galeria-container">
-        <h2 class="galeria-titulo">✦ GALERIA DE FOTOS ✦</h2>
-        <div class="decoracao">
-            ❦ Recordações da nossa Festa Junina ❦
-        </div>
-
-        <div class="slideshow-container" id="galeria-slideshow">
-            <img class="slide-imagem" id="slide-img" src="" alt="Foto do evento">
-            <div class="legenda" id="slide-legenda"></div>
-        </div>
-
-        <div class="indicadores" id="indicadores"></div>
-        
-        <div class="decoracao-galeria">
-            ❦ ❦ ❦
+            <div class="w3-third"><br></div>
         </div>
     </div>
+
+    <!-- Programação e Cardápio -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:900px" id="programacao">
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <!-- Atrações -->
+            <div style="flex: 1; min-width: 280px;">
+                <div class="cardapio-container">
+                    <h2>✦ ATRAÇÕES ✦</h2>
+                    <div class="decoracao">❦ ❦ ❦</div>
+                    <table>
+                        <tbody>
+                            <tr><td>Show de Talentos</td></tr>
+                            <tr><td>Pescaria com Brindes</td></tr>
+                            <tr><td>Dança de Quadrilha</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="decoracao">❦ ❦ ❦</div>
+                </div>
+            </div>
+            <!-- Cardápio -->
+            <div style="flex: 1; min-width: 280px;">
+                <div class="cardapio-container">
+                    <h2>✦ CARDÁPIO DA ROÇA ✦</h2>
+                    <div class="decoracao">❦ ❦ ❦</div>
+                    <table>
+                        <tbody>
+                            <tr><td>Caldo Verde</td></tr>
+                            <tr><td>Cuscuz</td></tr>
+                            <tr><td>Canjica Doce</td></tr>
+                            <tr><td>Canjiquinha</td></tr>
+                            <tr><td>Bolos</td></tr>
+                            <tr><td>Cachorro Quente</td></tr>
+                            <tr><td>Doces e Guloseimas</td></tr>
+                            <tr><td>Refrigerantes</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="decoracao">❦ Feito com o sabor da tradição ❦</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMO PARTICIPAR -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+            <h1 class="w3-wide w3-center section-title" style="color: white;">PARTICIPE!</h1>
+            <p class="w3-opacity w3-center" style="color: #ddd;"><i>A inscrição para as atividades é opcional, exceto o Show de Talentos.</i></p><br>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <!-- Caixa 1 - Show de Talentos -->
+                <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
+                    <p><b>🎭 Show de Talentos</b></p>
+                    <p>Todo talento é digno.<br>Nos mostre o seu!</p>
+                    <button class="w3-button w3-black" style="margin-top: auto;" onclick="window.open('https://forms.gle/PSQ3JcmEmzFtHNLM9', '_blank')">Inscreva-se!</button>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="QR code" style="width: 100%; margin-top: 15px;">
+                </div>
+
+                <!-- Caixa 2 - Pescaria -->
+                <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
+                    <p><b>🎣 Pescaria</b></p>
+                    <p><strong>Itens para doação:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Brinquedos e jogos em bom estado</li>
+                        <li>Livros e Gibis</li>
+                        <li>Doces e guloseimas</li>
+                        <li>Brindes e variedades</li>
+                    </ul>
+                    <p><strong>📍 Onde entregar?</strong><br>Caixa oficial da Pescaria no Setor Pedagógico / Secretaria</p>
+                    <p><strong>⏰ Prazo: 11/06 (Quinta-feira)</strong></p>
+                    <p><em>💡 Quem desapega, ajuda a fazer a festa mais bonita!</em></p>
+                </div>
+
+                <!-- Caixa 3 - Doações de alimento -->
+                <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
+                    <p><b>🍲 Doações de alimento</b></p>
+                    <p>Procure seu professor para se inscrever na doação de alimentos para a festa.</p>
+                    <br>
+                    <h3 style="color: #3b2415;">🍿 Vamos todos nos unir para um arraial de matar!</h3>
+                    <br>
+                    <p><strong>🍢 Itens sugeridos:</strong><br>Milho, amendoim, pipoca, doces típicos</p>
+                </div>
+
+                <!-- Caixa 4 - Confirme presença -->
+                <div style="flex: 1; min-width: 220px; background: white; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; color: #2c1b0f;">
+                    <p><b>✅ Confirme sua presença!</b></p>
+                    <p><strong>⏰ Prazo: 12/06</strong></p>
+                    <button class="w3-button w3-black" style="margin-top: auto;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfSs9NSM6f_eUq9xJDhnqSvKkiwRQNibhLQBWtOHkW0J5rYmg/viewform?usp=publish-editor', '_blank')">Confirmar Presença</button>
+                    <br>
+                    <p style="font-size: 12px; margin-top: 10px;">*Sua confirmação nos ajuda a organizar melhor a festa!</p>
+                </div>
+            </div>
+            <p class="w3-opacity w3-center" style="margin-top: 30px; color: #ddd;"><i>📌 Somente os alunos estão convidados para a festa, e apenas o show de talentos precisa de inscrição</i></p>
+        </div>
+    </div>
+
+    <!-- Galeria de Fotos -->
+    <div class="w3-container w3-content w3-center w3-padding-64" id="galeria">
+        <div class="galeria-container">
+            <h2 class="galeria-titulo">✦ GALERIA DE FOTOS ✦</h2>
+            <div class="decoracao">❦ Recordações da nossa Festa Junina ❦</div>
+            <div class="slideshow-container" id="galeria-slideshow">
+                <!-- O JavaScript vai popular esta área -->
+                <div id="slide-media-container"></div>
+                <div class="legenda" id="slide-legenda"></div>
+            </div>
+            <div class="indicadores" id="indicadores"></div>
+            <div class="decoracao-galeria">❦ ❦ ❦</div>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="w3-container w3-content w3-padding-64" id="contact" style="max-width:800px;">
+        <h2 class="w3-wide w3-center section-title" style="margin-bottom: 30px;">CONTATO</h2>
+        <div class="contact-container">
+            <form id="whatsappForm" onsubmit="enviarWhatsApp(event)">
+                <div class="w3-margin-bottom">
+                    <label>Nome:</label>
+                    <input class="w3-input w3-border" type="text" id="nome" placeholder="Seu nome completo" required style="border-color: #3b2415;">
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>Telefone:</label>
+                    <input class="w3-input w3-border" type="tel" id="telefone" placeholder="(22) 99999-9999" required style="border-color: #3b2415;">
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>E-mail:</label>
+                    <input class="w3-input w3-border" type="email" id="email" placeholder="seuemail@exemplo.com" required style="border-color: #3b2415;">
+                </div>
+                <div class="w3-margin-bottom">
+                    <label>Mensagem:</label>
+                    <textarea class="w3-input w3-border" id="mensagem" placeholder="Digite sua mensagem aqui..." required rows="5" style="border-color: #3b2415;"></textarea>
+                </div>
+                <button type="submit" class="w3-button w3-black" style="width: 100%; padding: 12px; font-size: 16px;">
+                    <i class="fa fa-whatsapp"></i> ENVIAR MENSAGEM
+                </button>
+            </form>
+            <div id="statusMensagem" style="margin-top: 15px; text-align: center; display: none; padding: 10px; border-radius: 5px;"></div>
+        </div>
+        <div class="w3-row w3-padding-32 w3-center">
+            <div class="w3-col m12 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Av. Aloisio da Silva Gomes s/n, Granja dos Cavaleiros, Macaé - RJ<br>
+                <i class="fa fa-whatsapp" style="width:30px"></i> <a href="https://wa.me/5522998884900" target="_blank">+55 (22) 99888-4900</a><br>
+                <i class="fa fa-envelope" style="width:30px"></i> faetecmacae@gmail.com.br
+            </div>
+        </div>
+    </div>
+
+    <!-- End Page Content -->
 </div>
 
-
-<!-- Creditos -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-<i class="fa fa-instagram w3-hover-opacity"></i>
-
-<p class="w3-medium">
-  <strong>Créditos</strong><br>
-  Site da Festa Junina FAETEC Macaé 2026 desenvolvido pela equipe:<br><br>
-
-  <strong>Orientação:</strong> Ana Maria Moura (Professora)<br><br>
-
-  <strong>Integrantes:</strong><br>
-  Marcelo Moraes, Sttefany Teixeira, Pedro Henrique, Gabriel Melo,<br>
-  Ruan Conceição, Matheus Frutuoso e João Victor Silva.<br><br>
-
-  FAETEC Macaé – 2026<br>
-  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-</p>
-
+<!-- Créditos -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey">
+    <p class="w3-medium">
+        <strong>Créditos</strong><br>
+        Site da Festa Junina FAETEC Macaé 2026 desenvolvido pela equipe:<br><br>
+        <strong>Orientação:</strong> Ana Maria Moura (Professora)<br><br>
+        <strong>Integrantes:</strong><br>
+        Marcelo Moraes, Sttefany Teixeira, Pedro Henrique, Gabriel Melo,<br>
+        Ruan Conceição, Matheus Frutuoso e João Victor Silva.<br><br>
+        FAETEC Macaé – 2026<br>
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    </p>
 </footer>
 
 <script>
-  // SLIDESHOW PRINCIPAL (banner) 
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 8000);    
-}
-
-//imagens da galeria (substituir os templates dps)
-const galeriaImagens = [
-    {
-        url: "Template.png",
-        legenda: "Template"
-    },
-    {
-        url: "WhatsAppVideo2026-06-08at20.46.26.mp4",
-        legenda: "Seu talento brilha!"
-    },
-    {
-        url: "WhatsAppVideo2026-06-08at20.46.35.mp4",
-        legenda: "FAETEC apresenta:"
-    },
-    {
-        url: "https://via.placeholder.com/1000x500?text=Show+de+Talentos",
-        legenda: "Template"
-    },
-    {
-        url: "https://via.placeholder.com/1000x500?text=Pescaria",
-        legenda: "Template"
-    },
-    {
-        url: "https://via.placeholder.com/1000x500?text=Fogueira",
-        legenda: "Template"
+    // SLIDESHOW PRINCIPAL (banner)
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 8000);
     }
-];
 
-let indiceAtual = 0;
-let intervaloGaleria;
+    // GALERIA DE IMAGENS/VIDEOS (Seção de Fotos)
+    // Você pode trocar os 'url' pelos seus arquivos finais. Use 'tipo: 'video'' para arquivos .mp4.
+    const galeriaItens = [
+        { url: "https://img.freepik.com/fotos-gratis/danca-de-casal-de-festa-junina-com-cenografia-tipica_23-2151609222.jpg", legenda: "Quadrilha animada", tipo: 'imagem' },
+        { url: "https://www.w3schools.com/html/mov_bbb.mp4", legenda: "Um show de talentos inesquecível!", tipo: 'video' },
+        { url: "https://img.freepik.com/fotos-gratis/barraca-de-pescaria-de-festa-junina_23-2151609231.jpg", legenda: "Pescaria: diversão garantida", tipo: 'imagem' },
+        { url: "https://img.freepik.com/fotos-gratis/comidas-tipicas-de-festa-junina_23-2151609247.jpg", legenda: "As delícias do nosso cardápio", tipo: 'imagem' },
+        { url: "https://img.freepik.com/fotos-gratis/fogueira-de-festa-junina_23-2151609235.jpg", legenda: "O calor da fogueira", tipo: 'imagem' }
+    ];
 
-// Função para atualizar a imagem exibida
-function atualizarSlide(index) {
-    const imagem = galeriaImagens[index];
-    if (imagem) {
-        const imgElement = document.getElementById('slide-img');
+    let indiceAtual = 0;
+    let intervaloGaleria;
+
+    function atualizarSlide(index) {
+        const item = galeriaItens[index];
+        const container = document.getElementById('slide-media-container');
         const legendaElement = document.getElementById('slide-legenda');
         
-        imgElement.src = imagem.url;
-        legendaElement.textContent = imagem.legenda;
+        let mediaHTML = '';
+        if (item.tipo === 'video') {
+            mediaHTML = `<video class="slide-video" autoplay muted loop playsinline>
+                            <source src="${item.url}" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                         </video>`;
+        } else {
+            mediaHTML = `<img class="slide-imagem" src="${item.url}" alt="${item.legenda}">`;
+        }
         
+        container.innerHTML = mediaHTML;
+        legendaElement.textContent = item.legenda;
+
         // Atualizar indicadores
-        const pontos = document.querySelectorAll('.ponto');
-        pontos.forEach((ponto, i) => {
-            if (i === index) {
-                ponto.classList.add('ativo');
-            } else {
-                ponto.classList.remove('ativo');
-            }
+        document.querySelectorAll('.ponto').forEach((ponto, i) => {
+            ponto.classList.toggle('ativo', i === index);
         });
     }
-}
 
-// Função para avançar para o próximo slide
-function proximoSlide() {
-    indiceAtual = (indiceAtual + 1) % galeriaImagens.length;
-    atualizarSlide(indiceAtual);
-}
-
-// Função para voltar ao slide anterior
-function slideAnterior() {
-    indiceAtual = (indiceAtual - 1 + galeriaImagens.length) % galeriaImagens.length;
-    atualizarSlide(indiceAtual);
-}
-
-// Função para ir para um slide específico
-function irParaSlide(index) {
-    indiceAtual = index;
-    atualizarSlide(indiceAtual);
-    reiniciarIntervalo();
-}
-
-// Reiniciar o intervalo do slideshow
-function reiniciarIntervalo() {
-    if (intervaloGaleria) {
-        clearInterval(intervaloGaleria);
+    function proximoSlide() {
+        indiceAtual = (indiceAtual + 1) % galeriaItens.length;
+        atualizarSlide(indiceAtual);
     }
-    intervaloGaleria = setInterval(proximoSlide, 8000);
-}
 
-// Criar os indicadores (pontinhos)
-function criarIndicadores() {
-    const containerIndicadores = document.getElementById('indicadores');
-    containerIndicadores.innerHTML = '';
-    
-    galeriaImagens.forEach((_, index) => {
-        const ponto = document.createElement('span');
-        ponto.className = 'ponto';
-        if (index === 0) ponto.classList.add('ativo');
-        ponto.addEventListener('click', () => irParaSlide(index));
-        containerIndicadores.appendChild(ponto);
-    });
-}
+    function slideAnterior() {
+        indiceAtual = (indiceAtual - 1 + galeriaItens.length) % galeriaItens.length;
+        atualizarSlide(indiceAtual);
+    }
 
-// Adicionar botões de navegação (opcional - anterior/próximo)
-function adicionarBotoesNavegacao() {
-    const container = document.querySelector('.slideshow-container');
-    const btnAnterior = document.createElement('button');
-    const btnProximo = document.createElement('button');
-    
-    btnAnterior.innerHTML = '❮';
-    btnProximo.innerHTML = '❯';
-    
-    btnAnterior.style.cssText = `
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-        background-color: rgba(59, 36, 21, 0.7);
-        color: white;
-        border: none;
-        font-size: 24px;
-        padding: 12px 18px;
-        cursor: pointer;
-        border-radius: 50%;
-        z-index: 10;
-        transition: 0.3s;
-    `;
-    
-    btnProximo.style.cssText = `
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        background-color: rgba(59, 36, 21, 0.7);
-        color: white;
-        border: none;
-        font-size: 24px;
-        padding: 12px 18px;
-        cursor: pointer;
-        border-radius: 50%;
-        z-index: 10;
-        transition: 0.3s;
-    `;
-    
-    btnAnterior.onmouseenter = () => btnAnterior.style.backgroundColor = 'rgba(59, 36, 21, 0.9)';
-    btnAnterior.onmouseleave = () => btnAnterior.style.backgroundColor = 'rgba(59, 36, 21, 0.7)';
-    btnProximo.onmouseenter = () => btnProximo.style.backgroundColor = 'rgba(59, 36, 21, 0.9)';
-    btnProximo.onmouseleave = () => btnProximo.style.backgroundColor = 'rgba(59, 36, 21, 0.7)';
-    
-    btnAnterior.onclick = () => {
-        slideAnterior();
+    function irParaSlide(index) {
+        indiceAtual = index;
+        atualizarSlide(indiceAtual);
         reiniciarIntervalo();
-    };
-    
-    btnProximo.onclick = () => {
-        proximoSlide();
-        reiniciarIntervalo();
-    };
-    
-    container.style.position = 'relative';
-    container.appendChild(btnAnterior);
-    container.appendChild(btnProximo);
-}
+    }
 
-// Inicializar a galeria
-function inicializarGaleria() {
-    criarIndicadores();
-    adicionarBotoesNavegacao();
-    atualizarSlide(0);
-    intervaloGaleria = setInterval(proximoSlide, 8000);
-    
-    // Pausar slideshow quando o mouse estiver sobre a imagem
-    const container = document.querySelector('.slideshow-container');
-    container.addEventListener('mouseenter', () => {
+    function reiniciarIntervalo() {
         if (intervaloGaleria) clearInterval(intervaloGaleria);
-    });
-    container.addEventListener('mouseleave', () => {
         intervaloGaleria = setInterval(proximoSlide, 8000);
+    }
+
+    function criarIndicadores() {
+        const containerIndicadores = document.getElementById('indicadores');
+        containerIndicadores.innerHTML = '';
+        galeriaItens.forEach((_, index) => {
+            const ponto = document.createElement('span');
+            ponto.className = 'ponto' + (index === 0 ? ' ativo' : '');
+            ponto.addEventListener('click', () => irParaSlide(index));
+            containerIndicadores.appendChild(ponto);
+        });
+    }
+
+    function adicionarBotoesNavegacao() {
+        const container = document.querySelector('.slideshow-container');
+        const btnAnterior = document.createElement('button');
+        const btnProximo = document.createElement('button');
+        
+        btnAnterior.innerHTML = '❮';
+        btnProximo.innerHTML = '❯';
+        
+        const estiloBotao = `
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background-color: rgba(59, 36, 21, 0.7); color: white; border: none;
+            font-size: 24px; padding: 12px 18px; cursor: pointer; border-radius: 50%;
+            z-index: 10; transition: 0.3s;
+        `;
+        btnAnterior.style.cssText = estiloBotao + 'left: 10px;';
+        btnProximo.style.cssText = estiloBotao + 'right: 10px;';
+        
+        btnAnterior.onmouseenter = () => btnAnterior.style.backgroundColor = 'rgba(59, 36, 21, 0.9)';
+        btnAnterior.onmouseleave = () => btnAnterior.style.backgroundColor = 'rgba(59, 36, 21, 0.7)';
+        btnProximo.onmouseenter = () => btnProximo.style.backgroundColor = 'rgba(59, 36, 21, 0.9)';
+        btnProximo.onmouseleave = () => btnProximo.style.backgroundColor = 'rgba(59, 36, 21, 0.7)';
+        
+        btnAnterior.onclick = () => { slideAnterior(); reiniciarIntervalo(); };
+        btnProximo.onclick = () => { proximoSlide(); reiniciarIntervalo(); };
+        
+        container.style.position = 'relative';
+        container.appendChild(btnAnterior);
+        container.appendChild(btnProximo);
+    }
+
+    function inicializarGaleria() {
+        criarIndicadores();
+        adicionarBotoesNavegacao();
+        atualizarSlide(0);
+        intervaloGaleria = setInterval(proximoSlide, 8000);
+        
+        const container = document.querySelector('.slideshow-container');
+        container.addEventListener('mouseenter', () => { if (intervaloGaleria) clearInterval(intervaloGaleria); });
+        container.addEventListener('mouseleave', () => { intervaloGaleria = setInterval(proximoSlide, 8000); });
+    }
+
+    document.addEventListener('DOMContentLoaded', inicializarGaleria);
+
+    // FORMULÁRIO DE WHATSAPP
+    function enviarWhatsApp(event) {
+        event.preventDefault();
+        var nome = document.getElementById('nome').value;
+        var telefone = document.getElementById('telefone').value;
+        var email = document.getElementById('email').value;
+        var mensagem = document.getElementById('mensagem').value;
+        
+        if (!nome || !telefone || !email || !mensagem) {
+            mostrarStatus('Por favor, preencha todos os campos!', 'erro');
+            return;
+        }
+        
+        var numeroWhatsApp = '5522998884900';
+        var textoWhatsApp = `*NOVO CONTATO DO SITE - FESTA JUNINA FAETEC*%0a%0a`;
+        textoWhatsApp += `*Nome:* ${nome}%0a`;
+        textoWhatsApp += `*Telefone:* ${telefone}%0a`;
+        textoWhatsApp += `*E-mail:* ${email}%0a`;
+        textoWhatsApp += `*Mensagem:* ${mensagem}%0a%0a`;
+        textoWhatsApp += `*Enviado em:* ${new Date().toLocaleString('pt-BR')}`;
+        
+        var urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoWhatsApp}`;
+        window.open(urlWhatsApp, '_blank');
+        mostrarStatus(' Mensagem preparada! O WhatsApp será aberto para você enviar.', 'sucesso');
+        
+        setTimeout(function() {
+            document.getElementById('whatsappForm').reset();
+        }, 2000);
+    }
+
+    function mostrarStatus(mensagem, tipo) {
+        var statusDiv = document.getElementById('statusMensagem');
+        statusDiv.style.display = 'block';
+        statusDiv.innerHTML = mensagem;
+        statusDiv.style.backgroundColor = tipo === 'sucesso' ? '#d4edda' : '#f8d7da';
+        statusDiv.style.color = tipo === 'sucesso' ? '#155724' : '#721c24';
+        statusDiv.style.border = `1px solid ${tipo === 'sucesso' ? '#c3e6cb' : '#f5c6cb'}`;
+        setTimeout(() => { statusDiv.style.display = 'none'; }, 5000);
+    }
+
+    // MENU MOBILE
+    var menuButton = document.getElementById('menuButton');
+    var navDemo = document.getElementById('navDemo');
+
+    function toggleMenu() {
+        navDemo.classList.toggle('w3-show');
+    }
+
+    function closeMenu() {
+        navDemo.classList.remove('w3-show');
+    }
+
+    if (menuButton) {
+        menuButton.onclick = toggleMenu;
+    }
+
+    document.addEventListener('click', function(event) {
+        var isClickInsideNav = navDemo.contains(event.target);
+        var isClickOnButton = menuButton.contains(event.target);
+        if (!isClickInsideNav && !isClickOnButton && navDemo.classList.contains('w3-show')) {
+            navDemo.classList.remove('w3-show');
+        }
     });
-}
-
-// Iniciar a galeria quando a página carregar
-document.addEventListener('DOMContentLoaded', inicializarGaleria);
-
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Menu mobile
-var menuButton = document.getElementById('menuButton');
-var navDemo = document.getElementById('navDemo');
-
-function toggleMenu() {
-  if (navDemo.classList.contains('w3-show')) {
-    navDemo.classList.remove('w3-show');
-  } else {
-    navDemo.classList.add('w3-show');
-  }
-}
-
-function closeMenu() {
-  navDemo.classList.remove('w3-show');
-}
-
-if (menuButton) {
-  menuButton.onclick = toggleMenu;
-}
-
-// Fechar menu ao clicar fora (opcional - melhoria)
-document.addEventListener('click', function(event) {
-  var isClickInsideNav = navDemo.contains(event.target);
-  var isClickOnButton = menuButton.contains(event.target);
-  
-  if (!isClickInsideNav && !isClickOnButton && navDemo.classList.contains('w3-show')) {
-    navDemo.classList.remove('w3-show');
-  }
-});
 </script>
 
 </body>
